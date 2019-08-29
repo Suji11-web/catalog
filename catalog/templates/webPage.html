@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB PAGE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body div class="view" style="background-image: url('https://static.makeuseof.com/wp-content/uploads/2019/02/access-dark-web--670x335.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+	<nav class="nav navbar-nav">
+		<div class="container fluid">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="{{url_for('webPage.html')}}">Home</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{{url_for('sample_html')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+		</div>
+	</nav>
+	<form>
+		<div class="container" >
+			<center><h1 class="mt5">WORK</h1></center>
+
+
+   
+
+	
+				<div>
+					<a href="{{url_for('dummy_html')}}">
+						<h1>DUMMY DATA</h1></a>
+                         <p>dummy data will be shown in table</p>
+                   
+				</div>
+				<hr>
+             
+				<div>
+					
+					<a href="{{url_for('file_upload')}}"><h1>FILE UPLOADING</h1></a>
+
+                     
+                    <p>we will upload the file of any type and get that file in another link</p>
+
+				   
+			    </div>
+				<hr>
+				<div >
+				
+					<a href="{{url_for('email')}}"><h1>EMAIL CHECKING</h1></a>
+                    <p>we will check the email by sending OTP to the entered email        </p>
+			
+				</div>
+			    <hr>
+                <div >
+                	<a href="{{url_for('showData')}}"><h1 text-white>SHOW DATA</h1></a>
+                	<p>data is visible to you in form. you can do edit,delete and add operations in that form</p>
+                    
+                </div>
+
+		</div>
+	</form>
+
+</body>
+</html>

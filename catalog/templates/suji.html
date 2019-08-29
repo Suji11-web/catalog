@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DATA</title>
+</head>
+<body>
+	<table border="10">
+		<tr>
+			<th>NAME</th>
+			<TH>DOB</TH>
+			<th>PLACE</th>
+
+		</tr>
+		{% for d in k %}
+		<tr>
+			<td>{{d.name}}</td>
+			<td>{{d.dob}}</td>
+			<td>{{d.org}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+
+
+</body>
+</html>
